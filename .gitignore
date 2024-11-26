@@ -1,0 +1,6 @@
+*.dvc
+.dvc/
+.cache/
+*.log
+*.pyc
+__pycache__/
