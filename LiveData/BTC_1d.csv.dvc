@@ -1,0 +1,5 @@
+outs:
+- md5: a72264306969856f55881ea46f2cca4f
+  size: 6097
+  hash: md5
+  path: BTC_1d.csv
