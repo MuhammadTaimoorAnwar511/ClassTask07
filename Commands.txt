@@ -4,5 +4,7 @@ git commit -m " # "
 git push origin main
 
 =====
-
+docker-compose down
+docker-compose up -d
+=====
 
