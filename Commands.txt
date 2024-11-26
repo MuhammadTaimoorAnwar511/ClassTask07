@@ -1,0 +1,8 @@
+git add .
+git add LiveData/BTC_1d.csv.dvc LiveData/cleaned_BTC_1d.csv.dvc Model/lstm_model.keras.dvc
+git commit -m " # "
+git push origin main
+
+=====
+
+
