@@ -48,7 +48,7 @@ def main():
     service = authenticate()
 
     # Folder ID where files will be uploaded in Google Drive
-    folder_id = '1P9PwHo77v9r6TJxTgrwLFSv6Ra-L8Qzb'  # Replace with your folder ID
+    folder_id = '1P9PwHo77v9r6TJxTgrwLFSv6Ra-L8Qzb'  
 
     # Files to upload
     files_to_upload = [

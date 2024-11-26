@@ -1,8 +1,9 @@
-*.dvc
-.dvc/
-.cache/
 *.log
 *.pyc
 __pycache__/
 credentials.json
 token.json
+# Ignore actual data files
+LiveData/BTC_1d.csv
+LiveData/cleaned_BTC_1d.csv
+Model/lstm_model.keras
