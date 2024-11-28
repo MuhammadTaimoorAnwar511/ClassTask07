@@ -11,10 +11,10 @@ default_args = {
 }
 
 with DAG(
-    'pipeline_without_training',
+    'MLOPS_pipeline',
     default_args=default_args,
-    description='Automated pipeline without model training',
-    schedule_interval=None,  # Run manually for now
+    description='Automated pipeline with model training',
+    schedule_interval=None,
     start_date=days_ago(1),
     catchup=False,
 ) as dag:
@@ -31,5 +31,11 @@ with DAG(
         bash_command='cd /opt/airflow/project && python EDA.py'
     )
 
+    # Task 3: Train Model
+    train_model = BashOperator(
+        task_id='train_model',
+        bash_command='cd /opt/airflow/project && python Model.py'
+    )
+
     # Define task dependencies
-    generate_data >> process_data
+    generate_data >> process_data >> train_model

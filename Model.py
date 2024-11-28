@@ -1,3 +1,6 @@
+import sys
+print(f"Python executable: {sys.executable}")
+print("Python Path:", sys.path)
 import os
 import json
 import numpy as np
@@ -9,7 +12,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.models import save_model
 
 # Suppress TensorFlow Warnings
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress informational TensorFlow logs
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
 
 # Create necessary folders
 os.makedirs("Model", exist_ok=True)
@@ -88,14 +91,3 @@ with open("result.json", "w") as f:
 model_path = "model/lstm_model.keras"
 save_model(model, model_path)
 print(f"LSTM model saved to {model_path}")
-
-# Optionally, plot the results
-
-#import matplotlib.pyplot as plt
-
-#plt.figure(figsize=(10, 6))
-#plt.plot(actual, label="Actual Close Prices")
-#plt.plot(predicted, label="Predicted Close Prices")
-#plt.title("Actual vs Predicted Close Prices")
-#plt.legend()
-#plt.show()
