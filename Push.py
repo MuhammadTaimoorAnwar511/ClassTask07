@@ -19,7 +19,7 @@ def authenticate():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                'credentials.json', SCOPES)
+                '/opt/airflow/credentials.json', SCOPES)      
             creds = flow.run_local_server(port=0)
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
@@ -48,7 +48,7 @@ def main():
     service = authenticate()
 
     # Folder ID where files will be uploaded in Google Drive
-    folder_id = '1P9PwHo77v9r6TJxTgrwLFSv6Ra-L8Qzb'  
+    folder_id = '1DYLjUQ86GNaAuTkCzcmJIc_4lkn_Tx1N'  
 
     # Files to upload
     files_to_upload = [
