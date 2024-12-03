@@ -19,7 +19,8 @@ def authenticate():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                '/opt/airflow/credentials.json', SCOPES)      
+                '/opt/airflow/credentials.json', SCOPES)  #/opt/airflow/credentials.json
+                
             creds = flow.run_local_server(port=0)
         with open('token.json', 'w') as token:
             token.write(creds.to_json())

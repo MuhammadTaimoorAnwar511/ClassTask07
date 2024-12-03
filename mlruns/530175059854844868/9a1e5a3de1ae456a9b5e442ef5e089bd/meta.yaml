@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LOQ/Desktop/7%20SEMESTER/MLOPS/ClassTask07/mlruns/530175059854844868/9a1e5a3de1ae456a9b5e442ef5e089bd/artifacts
+end_time: 1733248210651
+entry_point_name: ''
+experiment_id: '530175059854844868'
+lifecycle_stage: active
+run_id: 9a1e5a3de1ae456a9b5e442ef5e089bd
+run_name: casual-mare-399
+run_uuid: 9a1e5a3de1ae456a9b5e442ef5e089bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733248210470
+status: 3
+tags: []
+user_id: LOQ

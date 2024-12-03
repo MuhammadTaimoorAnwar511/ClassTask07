@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LOQ/Desktop/7%20SEMESTER/MLOPS/ClassTask07/mlruns/530175059854844868/1c6d26a150cf47448144f6ae68a9117a/artifacts
+end_time: 1733248305426
+entry_point_name: ''
+experiment_id: '530175059854844868'
+lifecycle_stage: active
+run_id: 1c6d26a150cf47448144f6ae68a9117a
+run_name: illustrious-hen-179
+run_uuid: 1c6d26a150cf47448144f6ae68a9117a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733248305252
+status: 3
+tags: []
+user_id: LOQ
